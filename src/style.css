@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #552A00;
+    font-family: 'Galada', cursive;
+    color: #FFFFFF;
+}
+/* estilos svg */
+
+.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:16;stroke-miterlimit:10;}
+svg{
+    height: 50px;
+}
+nav .logo{
+    float: left;
+}
+nav ul{
+    float: right;
+    list-style: none;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 100px;
+    margin: 20px 0px;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+nav ul li{
+    display: block;
+    float: left;
+    padding-top: 20px;
+    padding-left: 25px;
+
+}
+nav ul li a{
+    text-decoration: none;
+     color:#FFFFFF;
+}
+nav ul li a:hover{
+    color:#D49F6A;
+}
+
+.st0:hover{
+    stroke: #D49F6A;
+    fill: #D49F6A;
+}
+span{
+    visibility: hidden;
+}
+
+#container{
+    display: flex;
+}
+.container-detail{
+    width: 50%;
+    background: #D49F6A;
+    border: 1px solid #D49F6A;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+#purchaseDetail{
+    visibility: hidden;
+}
+.container-info{
+    margin: 0px 25px 0px 100px;
+}
+.container-form{
+    margin: 0px 100px 0px 25px;
+}
+
+form{
+    margin: 20px 80px;
+}
+h3{
+    font-size: 22px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px 0px;
+}
+form label{
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    display: inline-flex;
+    padding: 10px;
+}
+
+
+button{
+    float: right;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #AA7139;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border-color: transparent;
+    font-family: 'Galada', cursive;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+button:hover{
+    background: #552A00;
+    color: #D49F6A;
+}
