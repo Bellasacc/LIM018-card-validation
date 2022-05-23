@@ -25,8 +25,11 @@ const validator = {
       return false;//retorna false si no es valida
     } 
   },
-  maskify: () => {
-
+  maskify: (creditCardNumber) => {
+    const lastFourCharacters = creditCardNumber.slice(creditCardNumber.length-4); // los ultimos caracteres que si seran visibles
+    const stringToReplace = creditCardNumber.slice(0,creditCardNumber.length-4); //la cadena a reemplazar
+        
+    return '#'.repeat(stringToReplace.length) + lastFourCharacters;
   }
 };
 
