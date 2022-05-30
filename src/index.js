@@ -5,20 +5,19 @@ const btnConfirm = document.getElementById('confirm');
 //const message = document.getElementById('message');
 const svg = document.getElementsByTagName('path')[0];
 
-let array = '';
+let newCreditCardNumber = '';
 svg.classList.add('active');
 
  creditCardNumber.addEventListener('input',(e)=>{
-   
    btnConfirm.disabled = false;
    if(e.inputType === 'insertFromPaste'){
-      array = creditCardNumber.value
+      newCreditCardNumber = creditCardNumber.value
     } else if(e.inputType === 'deleteContentBackward'){
-      array = array.slice(0,array.length-1);
+      newCreditCardNumber = newCreditCardNumber.slice(0,newCreditCardNumber.length-1);
     } else if(e.inputType === 'insertText'){
-      array = array + creditCardNumber.value[creditCardNumber.value.length-1]
+      newCreditCardNumber = newCreditCardNumber + creditCardNumber.value[creditCardNumber.value.length-1]
     }
-    creditCardNumber.value = validator.maskify(array)
+    creditCardNumber.value = validator.maskify(newCreditCardNumber)
 })
 const onlyNumbers = (event) =>{
   if(event.keyCode >= 48 && event.keyCode <= 57) 
@@ -40,7 +39,7 @@ creditCardNumber.addEventListener('keypress',onlyNumbers)
   
 btnConfirm.addEventListener('click',(e)=>{
   e.preventDefault()
-  if(validator.isValid(array)){
+  if(validator.isValid(newCreditCardNumber)){
     alert('Tu tarjeta es valida')
   }else{
     alert('Tu tarjeta no es valida')
