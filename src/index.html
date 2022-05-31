@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de crédito válida</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="nav-menu">
-          <h1 class="logo">BSAC</h1>
+          <div class="logo">BSAC</div>
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#" title="Comprar">
+            <li><a href="#" id="products">Productos</a></li>
+            <li><a href="#" id="buy" title="Comprar">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                   <path class="st0" d="M437,128H128.6l0,0l-23.1-52.5c-0.7-1.5-2.2-2.5-3.9-2.5H51.9c-1.3,0-2.5,0.8-2.9,2.1l-2.6,8.3
@@ -31,11 +32,35 @@
       </nav>
     </header>
     <main>
-      <section id="container">
-        <div id="purchaseDetail" class="container-detail container-info">
-
+      <section id="container-catalogue">
+        <div id="catalogue-products" class="container-products">
+        
         </div>
-        <div class="container-detail container-form">
+      </section>
+      <section id="container">
+        <div id="purchaseDetail" class="container-detail container-info">      
+          <h3>Detalle de la compra</h3>
+          <div>
+            <i class='bx bx-cart'></i>
+            S/.<span id="total-price">0.00</span>
+          </div>
+          <div id="container-table">
+            <table>
+              <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container-detail" id="container-form">
           <form action="#">
             <h3>Detalle de la Tarjeta de Crédito</h3>
             <div class="form-control">
@@ -44,9 +69,9 @@
             </div>
             <div class="form-control">
               <label for="cardNumber">Número de Tarjeta</label>
-              <input type="text" name="" id="cardNumber" >
+              <input type="text" name="" id="cardNumber" required>
             </div>
-            <div>
+            <div class="form-control-date">
               <div class="form-control">
                 <label for="expirationDate">Fecha de Expiración</label>
                 <input type="text" id="expirationDate" placeholder="MM/YY" maxlength="5">            
@@ -56,15 +81,38 @@
                 <input type="text" id="ccv" placeholder="CCV" maxlength="3">
               </div>
             </div>
-            <div>
-              <button type="button">Confirmar pago</button>
+            <div class="form-control-btn">
+              <button type="button" id="confirm" disabled>Confirmar pago</button>
             </div>
-           
           </form>
         </div>
+        <!-- Modal -->
+        <div id="modal-message" class="modal">
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4>BSAC</h4>
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <p id="message"></p>
+              </div>
+          </div>
+  </div>
       </section>      
     </main>
-    <footer></footer>
+    <footer id="mainfooter">
+      <hr>
+      <div class="container">
+        <ul>
+          <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+          <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+          <li><a href="#"><i class='bx bxl-facebook-square' ></i></a></li>
+        </ul>
+        <span>
+          &copy; 2022 | Bella sacc
+        </span>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
