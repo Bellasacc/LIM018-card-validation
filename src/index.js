@@ -25,37 +25,37 @@ const listProducts = [{
   price: '5.00'
 },
 {
-  img: 'img/img-helado.png',
+  img: 'img/img-palta.png',
   title: 'Llavero palta',
   price: '5.00'
 },
 {
-  img: 'img/img-helado.png',
+  img: 'img/img-manzana.png',
   title: 'Llavero manzana',
   price: '5.00'
 },
 {
-  img: 'img/img-helado.png',
+  img: 'img/img-tostada.png',
   title: 'Llavero tostada',
   price: '5.00'
 },
 {
-  img: 'img/img-helado.png',
+  img: 'img/img-arbol.png',
   title: 'Llavero arbol',
   price: '5.00'
 },
 {
-  img: 'img/img-helado.png',
+  img: 'img/img-dona.png',
   title: 'Llavero dona',
   price: '5.00'
 },
 {
-  img: 'img/img-helado.png',
+  img: 'img/img-tortuga.png',
   title: 'Llavero tortuga',
   price: '5.00'
 },
 {
-  img: 'img/img-helado.png',
+  img: 'img/img-sol.png',
   title: 'Llavero sol',
   price: '5.00'
 }
@@ -70,7 +70,7 @@ const createProductCatalogue = ()=>{
     divImg.classList.add('product-img');
 
     let img = document.createElement('img');
-    img.setAttribute('src','img/img-helado.png')
+    img.setAttribute('src',`${item.img}`)
   
     let divInfo = document.createElement('div');
     divInfo.classList.add('product-info');
