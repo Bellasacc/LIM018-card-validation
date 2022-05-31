@@ -63,7 +63,10 @@ nav ul li a:hover{
 .active-a{
     color:#D49F6A;
 }
-
+.hidden{
+    display: none;
+    visibility: hidden;
+}
 #container-catalogue{
     max-width: 1400px;
     margin: 0 auto;
@@ -129,12 +132,11 @@ nav ul li a:hover{
 #container-catalogue .container-products .product-card .product-info button:hover{
     background: #552A00;
 }
-#container{
-    visibility: hidden;
+.container{
     max-width: 1400px;
     padding: 20px 30px;
     margin: 0 auto;
-    display: none;
+    display: flex;
     gap: 30px;
     flex-direction: row;
     justify-content: space-between;
@@ -347,7 +349,7 @@ tr:nth-child(even) {
         display: block;
         width: 100%;
     }
-    #container{
+    .container{
         display: block;
     }
     .container-detail{

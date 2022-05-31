@@ -9,7 +9,7 @@ const containerProducts = document.getElementById('catalogue-products');
 const containerCart = document.getElementsByTagName('tbody')[0];
 const containerTotalPrice = document.getElementById('total-price');
 const containerTableCart = document.getElementById('container-table');
-const containerForm = document.getElementById('container');
+const containerForm = document.getElementById('container-form');
 
 const modal = document.getElementById("modal-message");
 const span = document.getElementsByClassName("close")[0];
@@ -184,11 +184,11 @@ const activeCatalogueProducts = () => {
   svg.classList.remove('active-svg');
   btnProducts.classList.add('active-a');
 
-  containerProducts.style.visibility = 'visible';
-  containerProducts.style.display = 'grid';
-  
-  containerForm.style.display = 'none';
-  containerForm.style.visibility = 'hidden';
+  containerProducts.classList.add('container-products');
+  containerProducts.classList.remove('hidden');
+
+  containerForm.classList.add('hidden');
+  containerForm.classList.remove('container');
 
   containerProducts.innerHTML = '';
   createProductCatalogue();
@@ -200,11 +200,11 @@ btnBuy.addEventListener('click',()=>{
   btnProducts.classList.remove('active-a')
   svg.classList.add('active-svg');
 
-  containerProducts.style.display = 'none';
-  containerProducts.style.visibility = 'hidden';
+  containerProducts.classList.add('hidden');
+  containerProducts.classList.remove('container-products');
 
-  containerForm.style.visibility = 'visible';
-  containerForm.style.display = 'flex';
+  containerForm.classList.remove('hidden');
+  containerForm.classList.add('container');
 
 })
 //Evento para enmascarar y ejecutar la funcion maskify
