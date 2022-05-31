@@ -356,15 +356,8 @@ tr:nth-child(even) {
     form{
         margin: 20px 10px;
     }
-    .form-control{
-    }
     .form-control-date{
         flex-wrap: wrap;
-        /* display:flex; 
-        flex-wrap: wrap;
-        flex-direction: row; */
-    }
-    .form-control-1{
     }
 
 	#mainfooter .container {
