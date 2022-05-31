@@ -1,6 +1,42 @@
 # Bienvenido a la Tienda de llaveros BSAC
-En esta tienda encontraras amigurumis tamaño llavero, hechos con 100% algodon y a mano,
+
+En esta tienda virtual encontraras amigurumis tamaño llavero, hechos con 100% algodon y a mano,
 a los mejores precios, cada vez mas cerca con solo unos click, que esperas? 👉 [Comprar](https://bellasacc.github.io/LIM018-card-validation/src/) 
+
+## Imagenes de la pagina
+
+### Catalogo de productos
+
+![catalogo](img/catalogo.png)
+
+### Carrito y formulario de pago
+
+![carrito](img/carrito.png)
+
+### Mensaje de validación de tarjeta de crédito
+
+![mensaje](img/mensaje.png)
+
+Este producto esta dirigido a aquellas personas que les gustan los llaveros y que mejor tener uno 
+tejido a mano y de algodon, resistentes y suaves, antialergicos y hermosos.
+
+BSAC pensando en sus clientes y futuros clientes te presente este pagina con la finalidad de hacer tus 
+compras desde la comodidad de tu hogar, pensando en tu salud y dismiyendo riesgos de contagios en estos 
+tiempos de pandemia.
+
+### Diseño en Figma
+
+![figma](img/diseniofigma.png)
+
+Luego de hacer el diseño algunos indicaron que era mejor colocar etiquetas label en el formulario de 
+pago para que sea mas entendible
+
+### Una pequeña demo del final del proyecto
+
+![img](img/demo.gif)
+
+
+
 
 
 
