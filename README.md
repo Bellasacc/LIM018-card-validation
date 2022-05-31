@@ -7,15 +7,15 @@ a los mejores precios, cada vez mas cerca con solo unos click, que esperas? 👉
 
 ### Catalogo de productos
 
-![catalogo](img/catalogo.png)
+![catalogo](src/img/catalogo.png)
 
 ### Carrito y formulario de pago
 
-![carrito](img/carrito.png)
+![carrito](src/img/carrito.png)
 
 ### Mensaje de validación de tarjeta de crédito
 
-![mensaje](img/mensaje.png)
+![mensaje](src/img/mensaje.png)
 
 Este producto esta dirigido a aquellas personas que les gustan los llaveros y que mejor tener uno 
 tejido a mano y de algodon, resistentes y suaves, antialergicos y hermosos.
@@ -26,14 +26,14 @@ tiempos de pandemia.
 
 ### Diseño en Figma
 
-![figma](img/diseniofigma.png)
+![figma](src/img/diseniofigma.png)
 
 Luego de hacer el diseño algunos indicaron que era mejor colocar etiquetas label en el formulario de 
 pago para que sea mas entendible
 
 ### Una pequeña demo del final del proyecto
 
-![img](img/demo.gif)
+![img](src/img/demo.gif)
 
 
 
