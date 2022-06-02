@@ -97,10 +97,9 @@ const createProductCatalogue = ()=>{
   })
 }
 //Cargando automaticamente el catalogo de productos
-window.onload = ()=>{
-  btnProducts.classList.add('active-a');
-  createProductCatalogue();
-}
+btnProducts.classList.add('active-a');
+createProductCatalogue();
+
 //calculando el precio total
 const priceTotal = () => {
   let total = 0;
@@ -206,7 +205,7 @@ btnBuy.addEventListener('click',()=>{
   containerForm.classList.remove('hidden');
   containerForm.classList.add('container');
 
-})
+});
 //Evento para enmascarar y ejecutar la funcion maskify
 creditCardNumber.addEventListener('input',(e)=>{
    btnConfirm.disabled = false;
@@ -218,7 +217,7 @@ creditCardNumber.addEventListener('input',(e)=>{
       newCreditCardNumber = newCreditCardNumber + creditCardNumber.value[creditCardNumber.value.length-1]
     }
     creditCardNumber.value = validator.maskify(newCreditCardNumber)
-})
+});
 //Funcion para validar el ingreso de solo numeros en el input de la tarjeta
 const onlyNumbers = (event) =>{
   if(event.keyCode >= 48 && event.keyCode <= 57) 
@@ -231,7 +230,7 @@ span.addEventListener('click',() => {
   modal.style.display = "none";
   clearContainerShopping();
   activeCatalogueProducts();
-})
+});
 //Evento para cerrar el modal desde cualquier parte de la ventana
 window.addEventListener('click', (event) => {
   if (event.target == modal) {
@@ -239,7 +238,7 @@ window.addEventListener('click', (event) => {
     clearContainerShopping();
     activeCatalogueProducts();
   }
-})
+});
 //Evento para confirmar la venta, luego de validar la tarjeta
 btnConfirm.addEventListener('click',(e)=>{
   e.preventDefault()
@@ -250,5 +249,5 @@ btnConfirm.addEventListener('click',(e)=>{
   }else{
     message.innerHTML = `${nameUser.value.toUpperCase()}  No hemos podido validar tu tarjeta correctamente, por favor ingresa una tarjeta valida`;
   }
-})
+});
 
