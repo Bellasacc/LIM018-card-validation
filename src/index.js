@@ -222,7 +222,7 @@ creditCardNumber.addEventListener('input',(e)=>{
 //Funcion para validar el ingreso de solo numeros en el input de la tarjeta
 const onlyNumbers = (event) =>{
   if(event.keyCode >= 48 && event.keyCode <= 57) 
-        return event.target.value;
+      event.target.value;
     else event.preventDefault();
 }
 creditCardNumber.addEventListener('keypress',onlyNumbers)
